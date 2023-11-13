@@ -51,14 +51,14 @@ public class easy1 implements ActionListener {
       //  mb.add(help);
         //end menu at top
 
-       ta = new JTextArea();
-       ta.setBounds(50, 5, WIDTH - 100, HEIGHT - 50);
-       mainFrame.add(mb);  //add menu bar
-         mainFrame.add(ta);//add typing area
-      mainFrame.setJMenuBar(mb); //set menu bar
+       //ta = new JTextArea();
+      // ta.setBounds(50, 5, WIDTH - 100, HEIGHT - 50);
+       //mainFrame.add(mb);  //add menu bar
+         //mainFrame.add(ta);//add typing area
+     // mainFrame.setJMenuBar(mb); //set menu bar
 
-        statusLabel = new JLabel("", JLabel.CENTER);
-        statusLabel.setSize(250, 100);
+        //statusLabel = new JLabel("", JLabel.CENTER);
+        //statusLabel.setSize(250, 100);
 
         mainFrame.addWindowListener(new WindowAdapter() {
             public void windowClosing(WindowEvent windowEvent) {
@@ -75,17 +75,17 @@ public class easy1 implements ActionListener {
 
     private void showEventDemo() {
 
-       JButton okButton = new JButton("Ok");
-        JButton submitButton = new JButton("Submit");
-       JButton cancelButton = new JButton("Cancel");
-      JButton myButton = new JButton("Cate!");
-       JButton helloButton = new JButton("hello");
+       JButton okButton = new JButton("button 1");
+        JButton submitButton = new JButton("button 2");
+       JButton cancelButton = new JButton("button 3");
+      JButton myButton = new JButton("button 4");
+       JButton helloButton = new JButton("button 5");
 
-      okButton.setActionCommand("OK");
-      submitButton.setActionCommand("Submit");
-       cancelButton.setActionCommand("Cancel");
-      myButton.setActionCommand("Cate!");
-       myButton.setActionCommand("hello");
+      okButton.setActionCommand("button 1");
+      submitButton.setActionCommand("button 2");
+       cancelButton.setActionCommand("button 3");
+      myButton.setActionCommand("button 4");
+       myButton.setActionCommand("button 5");
 
        okButton.addActionListener(new ButtonClickListener());
        submitButton.addActionListener(new ButtonClickListener());
@@ -93,11 +93,11 @@ public class easy1 implements ActionListener {
        myButton.addActionListener(new ButtonClickListener());
        helloButton.addActionListener(new ButtonClickListener());
 
-       controlPanel.add(okButton);
-       controlPanel.add(submitButton);
-       controlPanel.add(cancelButton);
-       controlPanel.add(myButton);
-        controlPanel.add(helloButton);
+       mainFrame.add(okButton);
+       mainFrame.add(submitButton);
+      mainFrame.add(cancelButton);
+     mainFrame.add(myButton);
+        mainFrame.add(helloButton);
         mainFrame.setVisible(true);
     }
 
